@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <a class="navbar-brand" href="index.html">ONG Caminho da Vida</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar" aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="textoNavbar">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Projetos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sobrenos.html">Sobre Nós</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contato.html">Contato e Ajuda</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="clube.html">Clube de Membros</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="mapa.html">Atuação</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="curriculo.html">Currículo</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      EMPATIA MUDA DESTINOS
+    </span>
+  </div>
+</nav>
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Página inicial</a></li>
+    <li class="breadcrumb-item"><a href="sobrenos.html">Sobre Nós</a></li>
+    <li class="breadcrumb-item"><a href="contato.html">Contato</a></li>
+    <li class="breadcrumb-item"><a href="mapa.html">Clube de Membros</a></li>
+    <li class="breadcrumb-item"><a href="mapa.html">Atuação</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Currículo</li>
+  </ol>
+</nav>
+
+<div class="container mt-5">
+  <div class="row align-items-center">
+    <div class="col-md-8">
+   <h3 class="mb-1">Nome e Título Profissional</h3>
+  
+   <form>
+  <div class="form-group mt-4">
+    <label for="formGroupExampleInput">Nome</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite nome completo">
+  </div>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Título Profissional</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite seu título profissional">
+  </div>
+</form>
+ </div>
+
+ <div class="container mt-5">
+  <div class="row align-items-center">
+    <div class="col-md-8">
+   <h3 class="mb-1">Informações Pessoais</h3>
+
+   <form>
+  <div class="form-row mt-4">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Senha</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Endereço</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Complemento</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">Cidade</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputEstado">Estado</label>
+      <select id="inputEstado" class="form-control">
+        <option selected>SP</option>
+      <option value="AC">AC</option>
+    <option value="AL">AL</option>
+    <option value="AP">AP</option>
+    <option value="AM">AM</option>
+    <option value="BA">BA</option>
+    <option value="CE">CE</option>
+    <option value="DF">DF</option>
+    <option value="ES">ES</option>
+    <option value="GO">GO</option>
+    <option value="MA">MA</option>
+    <option value="MT">MT</option>
+    <option value="MS">MS</option>
+    <option value="MG">MG</option>
+    <option value="PA">PA</option>
+    <option value="PB">PB</option>
+    <option value="PR">PR</option>
+    <option value="PE">PE</option>
+    <option value="PI">PI</option>
+    <option value="RJ">RJ</option>
+    <option value="RN">RN</option>
+    <option value="RS">RS</option>
+    <option value="RO">RO</option>
+    <option value="RR">RR</option>
+    <option value="SC">SC</option>
+    <option value="SP">SP</option>
+    <option value="SE">SE</option>
+    <option value="TO">TO</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputCEP">CEP</label>
+      <input type="text" class="form-control" id="inputCEP" pattern="\d{8}">
+    </div>
+  </div>
+  <div class="form-group">
+  <label for="inputTelefone">Telefone</label>
+  <input type="tel" class="form-control" id="inputTelefone" name="telefone" placeholder="Digite número de telefone" pattern="\(\d{2}\)\s?\d{4,5}-\d{4}" title="Digite no formato (99) 91234-5678">
+</div>
+
+  <div class="form-group">
+  </div>
+  <button type="submit" class="btn btn-primary">Entrar</button>
+</form>
+   </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</body>
+</html>

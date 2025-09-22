@@ -1,44 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introdução Bootstrap</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Introdução Bootstrap</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/footer.css">
 </head>
 <body>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-success">
   <a class="navbar-brand" href="index.html">ONG Caminho da Vida</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar" aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="textoNavbar">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="index.html">Projetos</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="sobrenos.html">Sobre Nós</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contato.html">Contato e Ajuda</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="clube.html">Clube de Membros</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="mapa.html">Atuação</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="curriculo.html">Currículo</a>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="integrantes.html">Integrantes</a>
-      </li>
+      <li class="nav-item"><a class="nav-link" href="index.html">Projetos</a></li>
+      <li class="nav-item"><a class="nav-link" href="sobrenos.html">Sobre Nós</a></li>
+      <li class="nav-item"><a class="nav-link" href="contato.html">Contato e Ajuda</a></li>
+      <li class="nav-item"><a class="nav-link" href="clube.html">Clube de Membros</a></li>
+      <li class="nav-item"><a class="nav-link" href="mapa.html">Atuação</a></li>
+      <li class="nav-item active"><a class="nav-link" href="curriculo.html">Currículo</a></li>
+      <li class="nav-item"><a class="nav-link" href="integrantes.html">Integrantes</a></li>
     </ul>
-    <span class="navbar-text">
-      EMPATIA MUDA DESTINOS
-    </span>
+    <span class="navbar-text">EMPATIA MUDA DESTINOS</span>
   </div>
 </nav>
 
@@ -47,7 +34,7 @@
     <li class="breadcrumb-item"><a href="index.html">Página inicial</a></li>
     <li class="breadcrumb-item"><a href="sobrenos.html">Sobre Nós</a></li>
     <li class="breadcrumb-item"><a href="contato.html">Contato</a></li>
-    <li class="breadcrumb-item"><a href="mapa.html">Clube de Membros</a></li>
+    <li class="breadcrumb-item"><a href="clube.html">Clube de Membros</a></li>
     <li class="breadcrumb-item"><a href="mapa.html">Atuação</a></li>
     <li class="breadcrumb-item active" aria-current="page">Currículo</li>
   </ol>
@@ -56,161 +43,189 @@
 <div class="container mt-5">
   <div class="row align-items-center">
     <div class="col-md-8">
-   <h3 class="mb-1">Nome e Título Profissional</h3>
-  
-   <form>
-  <div class="form-group mt-4">
-    <label for="formGroupExampleInput">Nome</label>
-    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite nome completo">
-  </div>
-  <div class="form-group">
-    <label for="formGroupExampleInput2">Título Profissional</label>
-    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite seu título profissional">
-  </div>
-</form>
- </div>
-
- <div class="container mt-5">
-  <div class="row align-items-center">
-    <div class="col-md-8">
-   <h3 class="mb-1">Informações Pessoais</h3>
-
-   <form>
-  <div class="form-row mt-4">
-    <div class="form-group col-md-6">
-      <label for="inputEmail4">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-    </div>
-    <div class="form-group col-md-6">
-      <label for="inputPassword4">Senha</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="inputAddress">Endereço</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
-  </div>
-  <div class="form-group">
-    <label for="inputAddress2">Complemento</label>
-    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
-  </div>
-  <div class="form-row">
-    <div class="form-group col-md-6">
-      <label for="inputCity">Cidade</label>
-      <input type="text" class="form-control" id="inputCity">
-    </div>
-    <div class="form-group col-md-4">
-      <label for="inputEstado">Estado</label>
-      <select id="inputEstado" class="form-control">
-        <option selected>SP</option>
-      <option value="AC">AC</option>
-    <option value="AL">AL</option>
-    <option value="AP">AP</option>
-    <option value="AM">AM</option>
-    <option value="BA">BA</option>
-    <option value="CE">CE</option>
-    <option value="DF">DF</option>
-    <option value="ES">ES</option>
-    <option value="GO">GO</option>
-    <option value="MA">MA</option>
-    <option value="MT">MT</option>
-    <option value="MS">MS</option>
-    <option value="MG">MG</option>
-    <option value="PA">PA</option>
-    <option value="PB">PB</option>
-    <option value="PR">PR</option>
-    <option value="PE">PE</option>
-    <option value="PI">PI</option>
-    <option value="RJ">RJ</option>
-    <option value="RN">RN</option>
-    <option value="RS">RS</option>
-    <option value="RO">RO</option>
-    <option value="RR">RR</option>
-    <option value="SC">SC</option>
-    <option value="SP">SP</option>
-    <option value="SE">SE</option>
-    <option value="TO">TO</option>
-      </select>
-    </div>
-    <div class="form-group col-md-2">
-      <label for="inputCEP">CEP</label>
-      <input type="text" class="form-control" id="inputCEP" pattern="\d{8}">
-    </div>
-  </div>
-  <div class="form-group">
-  <label for="inputTelefone">Telefone</label>
-  <input type="text" class="form-control" placeholder="Digite número de telefone">
-</div>
-
-
-<div class="container mt-5">
-  <div class="row align-items-center">
-    <div class="col-md-8">
-      <h3 class="mb-1">Formação Acadêmica</h3>
-
       <form>
+
+        <h3 class="mb-1">Nome e Título Profissional</h3>
+        <div class="form-group mt-4">
+          <label for="formGroupExampleInput">Nome</label>
+          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite nome completo">
+        </div>
+        <div class="form-group">
+          <label for="formGroupExampleInput2">Título Profissional</label>
+          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Digite seu título profissional">
+        </div>
+
+        <h3 class="mb-1 mt-5">Informações Pessoais</h3>
+        <div class="form-row mt-4">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Senha</label>
+            <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputAddress">Endereço</label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+        </div>
+        <div class="form-group">
+          <label for="inputAddress2">Complemento</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, hotel, casa, etc.">
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">Cidade</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="form-group col-md-4">
+            <label for="inputEstado">Estado</label>
+            <select id="inputEstado" class="form-control">
+              <option selected>SP</option>
+              <option value="AC">AC</option>
+              <option value="AL">AL</option>
+              <option value="AP">AP</option>
+              <option value="AM">AM</option>
+              <option value="BA">BA</option>
+              <option value="CE">CE</option>
+              <option value="DF">DF</option>
+              <option value="ES">ES</option>
+              <option value="GO">GO</option>
+              <option value="MA">MA</option>
+              <option value="MT">MT</option>
+              <option value="MS">MS</option>
+              <option value="MG">MG</option>
+              <option value="PA">PA</option>
+              <option value="PB">PB</option>
+              <option value="PR">PR</option>
+              <option value="PE">PE</option>
+              <option value="PI">PI</option>
+              <option value="RJ">RJ</option>
+              <option value="RN">RN</option>
+              <option value="RS">RS</option>
+              <option value="RO">RO</option>
+              <option value="RR">RR</option>
+              <option value="SC">SC</option>
+              <option value="SE">SE</option>
+              <option value="TO">TO</option>
+            </select>
+          </div>
+          <div class="form-group col-md-2">
+            <label for="inputCEP">CEP</label>
+            <input type="text" class="form-control" id="inputCEP" pattern="\d{8}">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputTelefone">Telefone</label>
+          <input type="text" class="form-control" id="inputTelefone" placeholder="Digite número de telefone">
+        </div>
+
+        <h3 class="mb-1 mt-5">Formação Acadêmica</h3>
         <div class="form-group mt-4">
           <label for="curso">Curso</label>
           <input type="text" class="form-control" id="curso" placeholder="Digite o nome do curso">
         </div>
-
         <div class="form-group">
           <label for="anoConclusao">Ano de Conclusão</label>
           <input type="text" class="form-control" id="anoConclusao" placeholder="Digite o ano de conclusão">
         </div>
-
-        <div class="form-group mt-4">
+        <div class="form-group">
           <label for="descricaoCurso">Descrição</label>
           <input type="text" class="form-control" id="descricaoCurso" placeholder="Descrição do curso">
         </div>
-
         <div class="form-group">
           <label for="cidadeFormacao">Cidade</label>
           <input type="text" class="form-control" id="cidadeFormacao" placeholder="Digite a cidade da formação">
         </div>
 
-        <hr class="my-4">
-
-        <h3 class="mb-1">Experiências Profissionais</h3>
-
-        <div class="form-group mt-4">
+        <h3 class="mb-1 mt-5">Experiências Profissionais</h3>
+        <div class="form-group">
           <label for="empresa">Empresa</label>
           <input type="text" class="form-control" id="empresa" placeholder="Digite o nome da empresa">
         </div>
-
         <div class="form-group">
           <label for="cargo">Cargo</label>
           <input type="text" class="form-control" id="cargo" placeholder="Digite o cargo">
         </div>
-
         <div class="form-group">
           <label for="anoInicio">Ano de Início</label>
           <input type="text" class="form-control" id="anoInicio" placeholder="Digite o ano de início">
         </div>
-
         <div class="form-group">
           <label for="anoFim">Ano de Fim</label>
           <input type="text" class="form-control" id="anoFim" placeholder="Digite o ano de término">
         </div>
-
         <div class="form-group mt-4">
           <label for="atividades">Atividades Desenvolvidas</label>
           <textarea class="form-control" id="atividades" rows="3" placeholder="Descreva suas atividades"></textarea>
         </div>
-
         <div class="form-group">
           <label for="objetivo">Objetivo</label>
           <textarea class="form-control" id="objetivo" rows="2" placeholder="Digite seu objetivo profissional"></textarea>
         </div>
 
-        <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+        <button type="submit" class="btn btn-success mt-3 mb-5">Enviar Currículo</button>
       </form>
     </div>
   </div>
 </div>
 
+
+	<section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<h5>Quick links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+						<li><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+					</ul>
+				</div>
+          <div class="col-xs-12 col-sm-4 col-md-4">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3664.7786183230933!2d-47.292750024899796!3d-23.28749247898
+            895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf5ab2d35d2b0d%3A0x90131a5f0c2272b3!2sEscola%20T%C3%A9cnica%20Estad
+            ual%20Martinho%20di%20Ciero%20-%20Itu!5e0!3m2!1spt-BR!2sbr!4v1757333148546!5m2!1spt-BR!2sbr"></iframe>
+          </div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02"><i class="fa fa-google-plus"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.fiverr.com/share/qb8D02" target="_blank"><i class="fa fa-envelope"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p><u><a href="https://www.nationaltransaction.com/">National Transaction Corporation</a></u> is a Registered MSP/ISO of Elavon, Inc. Georgia [a wholly owned subsidiary of U.S. Bancorp, Minneapolis, MN]</p>
+					<p class="h6">© All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Sunlimetech</a></p>
+				</div>
+				<hr>
+			</div>	
+		</div>
+	</section>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
 </body>
 </html>
